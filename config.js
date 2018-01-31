@@ -1,8 +1,8 @@
 module.exports = {
   port: '8000',
-  jwt_secret: 'xxxxxxxxxx',
-  secret_key: 'xxxxxxxxxx',
-  mongodb: 'xxxxxxxxxx',
+  jwt_secret: '123456',
+  secret_key: '123456',
+  mongodb: 'mongodb://localhost/monotest',
   getErr: function(e){
     console.log(e)
     e.code = e.code || 500

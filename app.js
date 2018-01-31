@@ -20,6 +20,7 @@ app.use(json())
 app.use(jwt({secret: config.jwt_secret}).unless({path:[/^\/api\/login/, /^\/api\/register/]}))
 app.use(logger())
 
+//错误处理
 app.use(async(ctx, next) => {
   try{
     await next()

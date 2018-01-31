@@ -1,6 +1,13 @@
+/*
+ * @Author: monodev 
+ * @Date: 2018-01-30 16:22:08 
+ * @Last Modified by: monodev
+ * @Last Modified time: 2018-01-30 16:36:56
+ * @Description: jwt service 
+  */
 const jwt = require('jsonwebtoken')
 const config = require('../config')
-
+const User = require('../models/user')
 //生成token
 function signToke(user){
     const token = jwt.sign({
